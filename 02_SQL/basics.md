@@ -24,3 +24,19 @@ SELECT e.name, d.dept_name
 FROM employees e
 JOIN departments d ON e.dept_id = d.id;
 
+# SQL Basics — SELECT / WHERE / ORDER BY (Sept 23)
+
+## 1) SELECT
+Example:
+```sql
+SELECT customer_id, order_date, total_amount
+FROM orders;
+
+SELECT customer_id, order_date, total_amount
+FROM orders
+WHERE total_amount > 1000;
+
+SELECT customer_id, order_date, total_amount
+FROM orders
+WHERE total_amount > 1000
+ORDER BY order_date DESC;
