@@ -22,3 +22,16 @@ aws s3 cp my_data.csv s3://your-bucket/raw/my_data.csv
 
 # List objects in a prefix
 aws s3 ls s3://your-bucket/raw/
+# AWS S3 — Basics (Sept 22)
+
+- **What is a bucket?**
+  A bucket is a top-level container in S3 used to store objects (files). Buckets are globally named per account and exist in a specific region.
+
+- **What is an object?**
+  An object is a file stored in a bucket; it has a key (path/name), metadata, and content.
+
+- **IAM / Access basics**
+  Access to buckets/objects is controlled via IAM users/roles and bucket policies. Use least-privilege: grant only the actions needed (e.g., s3:GetObject for reads).
+
+- **Example CLI command**
+  List buckets:
