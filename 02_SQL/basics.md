@@ -65,3 +65,12 @@ ORDER BY o.order_date DESC;
 - `INNER JOIN` combines rows where the join condition matches (customer_id in both tables).
 - Always alias tables (`c`, `o`) for clarity.
 - Common interview Q: difference between INNER vs LEFT JOIN.
+
+- Understanding joins:
+
+## JOINs quick notes (Sept 29)
+- INNER JOIN: returns rows with matching keys in both tables.
+- LEFT JOIN: all rows from left table + matching from right (NULL if no match).
+- RIGHT JOIN: all rows from right table + matching from left.
+- FULL OUTER JOIN: all rows from both tables, NULL where no match.
+
