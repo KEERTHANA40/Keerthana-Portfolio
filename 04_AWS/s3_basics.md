@@ -35,3 +35,15 @@ aws s3 ls s3://your-bucket/raw/
 
 - **Example CLI command**
   List buckets:
+
+# AWS S3 — Practical Notes (Oct 7)
+
+- Upload example:
+  aws s3 cp localfile.csv s3://your-bucket-name/data/localfile.csv
+
+- IAM principle: use roles for compute, not static user keys.
+
+- Minimal workflow:
+  1. Raw → s3://company-raw/<dataset>/date=YYYY-MM-DD/
+  2. ETL → s3://company-processed/<dataset>/
+  3. Catalog → Glue or Unity Catalog points to processed data.
