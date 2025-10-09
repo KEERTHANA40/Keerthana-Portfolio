@@ -74,3 +74,23 @@ ORDER BY o.order_date DESC;
 - RIGHT JOIN: all rows from right table + matching from left.
 - FULL OUTER JOIN: all rows from both tables, NULL where no match.
 
+# SQL Basics — GROUP BY & Aggregation (Oct 7)
+
+-- 1. Total amount per customer
+SELECT customer, SUM(amount) AS total_amount, COUNT(*) AS orders
+FROM orders
+GROUP BY customer
+ORDER BY total_amount DESC;
+
+-- 2. Daily avg order amount
+SELECT order_date, AVG(amount) AS avg_amount
+FROM orders
+GROUP BY order_date
+ORDER BY order_date;
+
+-- 3. Group + HAVING (filter groups)
+SELECT customer, SUM(amount) AS total_amount
+FROM orders
+GROUP BY customer
+HAVING SUM(amount) > 100;
+
