@@ -94,3 +94,20 @@ FROM orders
 GROUP BY customer
 HAVING SUM(amount) > 100;
 
+## 4) JOIN Examples (Oct 9)
+
+-- INNER JOIN example
+SELECT c.customer_name, o.order_date, o.amount
+FROM customers c
+INNER JOIN orders o ON c.customer_id = o.customer_id;
+
+-- LEFT JOIN example
+SELECT c.customer_name, o.amount
+FROM customers c
+LEFT JOIN orders o ON c.customer_id = o.customer_id;
+
+-- Note:
+INNER JOIN → only matching records.
+LEFT JOIN → all records from left table + matched rows from right.
+
+
