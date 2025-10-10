@@ -110,4 +110,11 @@ LEFT JOIN orders o ON c.customer_id = o.customer_id;
 INNER JOIN → only matching records.
 LEFT JOIN → all records from left table + matched rows from right.
 
+# INNER JOIN — Practical Example (Oct 10)
+
+SELECT c.customer_id, c.name, o.order_date, o.total_amount  
+FROM customers c  
+INNER JOIN orders o ON c.customer_id = o.customer_id;
+
+-- INNER JOIN returns only matching records between tables.
 
