@@ -112,7 +112,6 @@ Each project will include:
 
 [![GitHub](https://img.shields.io/badge/GitHub-KEERTHANA40-181717?style=flat-square&logo=github)](https://github.com/KEERTHANA40)   
 
----
 
 💡 *“Each commit, each push, is proof of showing up.”*  
 **Last Updated:** Oct 11, 2025
