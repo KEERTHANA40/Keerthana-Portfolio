@@ -1,3 +1,66 @@
+SQL - Structured Query language - RDB - ORDER MATTERS
+# tables
+1. SHOW TABLES;
+2. SHOW COLUMNS from tablename OR DESC tablename - description of the table
+4. DROP TABLES;
+5. -- OR >> comments
+# Working on table
+1. CREATE TABLE <tablename>(
+   col1 type1 PRIMARY KEY,
+   col2 type2
+   )
+2. INSERT INTO tablename (col1, col2) VALUES(v1,v2); = no need to specify column names
+3. INSERT INTO name1
+   SELECT * from name2
+4. CREATE TABLE name1 **as**
+   SELECT * from name2
+5. Rules for col1 - PRIMARY KEY, AUTO INCREMENT, NOT NULL. DEFAULT (giving value if passed NULL), KEY, 
+
+# Operations on table
+CRUD
+C - create
+R - read
+U - Update
+D - Delete
+
+# Select - to get certain things
+1. SELECT * FROM tablename
+2. SELECT col1 FROM tablename
+3. SELECT col1 FROM tablename WHERE condition
+
+# Update -
+1. Rule of thumb - always use SELECT before UPDATE
+2. UPDATE tablename SET col1 = value WHERE condition **first tablename then operation**
+3. **if where condition not given, then updates the whole column**
+
+# DISTINCT
+1. SELECT DISTINCT col1 from tablename
+
+# ORDER BY
+SELECT * FROM tablename ORDER BY col1/the index of col
+SELECT * FROM tablename ORDER BY col1/the index of col **DESC**
+
+<img width="828" height="418" alt="image" src="https://github.com/user-attachments/assets/c537f34c-386d-419a-a7a9-4bb760a74f1d" />
+
+
+# Delete From- 
+1. Same rules as UPDATE
+2. DELETE FROM tablename WHERE condition
+   
+## String manipulation
+# CONCAT
+SELECT CONCAT(col1,col2) AS newcol1 FROM tablename
+
+# Substring - SUBSTR
+SELECT SUBSTR(col1,1,20) AS newcol1 FROM tablename
+
+# Replace
+SELECT REPLACE(Str,s1,s2) FROM tablename
+
+# TRIM - remove whitespaces
+
+
+
 SELECT, WHERE, GROUP BY examples.
 
 # SQL Basics — Sept 20
@@ -117,4 +180,3 @@ FROM customers c
 INNER JOIN orders o ON c.customer_id = o.customer_id;
 
 -- INNER JOIN returns only matching records between tables.
-
