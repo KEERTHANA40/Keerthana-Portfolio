@@ -42,6 +42,13 @@ SELECT * FROM tablename ORDER BY col1/the index of col **DESC**
 
 <img width="828" height="418" alt="image" src="https://github.com/user-attachments/assets/c537f34c-386d-419a-a7a9-4bb760a74f1d" />
 
+<img width="740" height="935" alt="image" src="https://github.com/user-attachments/assets/6fd81acc-25b0-4799-b2d3-20f2fe732623" />
+
+# LIMIT - end output count
+
+# LIKE - considering with conditions
+% = any number 
+_ = 1 character only
 
 # Delete From- 
 1. Same rules as UPDATE
@@ -59,7 +66,15 @@ SELECT REPLACE(Str,s1,s2) FROM tablename
 
 # TRIM - remove whitespaces
 
+## Aggregate functions
+# COUNT 
+SELECT COUNT (*) FROM tablename = null not considered
+SELECT COUNT (DISTINCT col1) FROM tablename
 
+# GROUP BY
+SELECT COUNT(*) FROM tablename GROUP BY col1
+
+# MIN MAX SUM AVG
 
 SELECT, WHERE, GROUP BY examples.
 
