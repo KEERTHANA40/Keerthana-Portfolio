@@ -78,6 +78,12 @@ SELECT COUNT(*) FROM tablename GROUP BY col1
 
 SELECT, WHERE, GROUP BY examples.
 
+# HackerRank
+Find the difference between the total number of CITY entries in the table and the number of distinct CITY entries in the table.
+<img width="300" height="290" alt="image" src="https://github.com/user-attachments/assets/272b70a8-fad7-42e1-bba1-705ba6d98c50" />
+
+SELECT count(city) - count(distinct city) from STATION;
+
 # SQL Basics — Sept 20
 
 ## SELECT & WHERE
